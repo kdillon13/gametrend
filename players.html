@@ -1,0 +1,48 @@
+<!---
+Display model predictions
+
+Rendered from app.py.
+Display model predictions calculated from user input by app.py.
+Also display next three highest ROIs for both expected downloads
+and median hours played per owner.
+
+Created by: Kyle Dillon
+Last updated: 10-7-18
+--->
+
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-1.3.2.min.css"/>
+
+  </head>
+</html>
+<html>
+   <body>
+     <table>
+         
+            <tr>
+                <th> Sales Per Month: {{ result }} </th>
+                    <th>... with {{label2}} {{result2}}<br>
+                    ... with {{label3}} {{result3}}<br>
+                    ... with {{label4}} {{result4}}
+                    </th>
+            </tr>
+            <tr>
+                <th> Median Hours Per Player: {{ resulthours }} </th>
+                    <th>... with {{labelhours2}} {{resulthours2}}<br>
+                    ... with {{labelhours3}} {{resulthours3}}<br>
+                    ... with {{labelhours4}} {{resulthours4}}
+                    </th>
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr>
+                
+            </tr>
+
+      </table>
+      
+   </body>
+</html>

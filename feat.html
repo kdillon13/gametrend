@@ -1,0 +1,157 @@
+<!---
+Display and accept user input to pass to models for prediction
+
+Display model features to users, allowing input from them.
+After page submit, return user inputs to app.py to calculate model predictions. 
+
+Created by: Kyle Dillon
+Last updated: 10-7-18
+--->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-1.3.2.min.css"/>
+
+  </head>
+</html>
+
+<style> 
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 5px;
+    font-family: montserrat;
+}
+
+input[type=submit] {
+    width: 20em;  height: 2em;
+}
+</style>
+
+<html>
+    <body>
+        <div class="header">
+            <h1 style="font-size: 80px">GameTrend</h1>
+        </div>
+   
+      <form action = "http://localhost:5000/result" method = "POST">
+            <table width="100%">
+            
+            <tr class="row">
+                <th>
+                <h2>Hardware and Software</h2>
+                </th>
+                <th>
+                <h2>Genre</h2>
+                </th>
+                <th>
+                <h2>Pricing</h2>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                <p>Support Handheld Controller?
+                <select name="controller">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>Available on Mac?
+                <select name="onMac">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>Multiplayer?
+                <select name="multi">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>           
+                <p>Cooperative Play?
+                <select name="coop">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>            
+                <p>Massively Multiplayer Online?
+                <select name="mmo">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                </th>
+                <th>
+                <p>Indie Genre?
+                <select name="isIndie">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>Action Genre?
+                <select name="isAction">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>Casual Genre?
+                <select name="casual">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>Strategy Genre?
+                <select name="strat">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>RPG Genre?
+                <select name="rpg">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>Simulation Genre?
+                <select name="simulation">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>Sports Genre?
+                <select name="sports">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>Racing Genre?
+                <select name="racing">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                </th>
+                <th>
+                <p>In-Game Purchases?
+                <select name="inApp">
+                    <option value="1">Yes</option>
+                    <option value="0" selected="selected">No</option> 
+                </select></p>
+                <br>
+                <p>Initial Price?
+                <input type="text" value="9.22" name="price">
+<!--                    <option value="1">Yes</option> -->
+<!--                    <option value="0" selected="selected">No</option> -->
+                </select></p> 
+                </th>
+            </tr>
+            </table>
+            <table width="100%">
+            <tr>           
+                <th><p><input type = "submit" value = "submit" /></p></th>
+            </tr>
+            </table>
+      </form>
+      
+   </body>
+</html>
